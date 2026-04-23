@@ -11,7 +11,7 @@ class Goyoke < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Bucket-Chemist/goYoke/releases/download/v0.5.2/goYoke_0.5.2_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "80a89790906d75b182b5b49f1fff7159ca87bbc9e1d41f71d87e4bff5f1227eb"
+      sha256 "aef7f7196043b38d25fff3d2498e9b98453d52a29e93408696c2903f44450c03"
 
       define_method(:install) do
         bin.install "goyoke"
@@ -19,7 +19,7 @@ class Goyoke < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Bucket-Chemist/goYoke/releases/download/v0.5.2/goYoke_0.5.2_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "c21967aada832966fd1b74117ce60d596122984eb7f88b4f116c30c2e3229a84"
+      sha256 "d951dcf0b10b267ba5ce0f2d5d5b4a4a9f466ebb1ea1951664b664ca5698ab3c"
 
       define_method(:install) do
         bin.install "goyoke"
@@ -30,7 +30,7 @@ class Goyoke < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Bucket-Chemist/goYoke/releases/download/v0.5.2/goYoke_0.5.2_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "f29f3e572c49ce77264cdbcbb5eebd6239bf24a8b45379ce56ac8c45625fcd6c"
+      sha256 "ac83e3393a509c318f3a4ba133d030d28b731cae5aad6d82d6ae3ed99c8cf00d"
       define_method(:install) do
         bin.install "goyoke"
       end
