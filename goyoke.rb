@@ -5,21 +5,21 @@
 class Goyoke < Formula
   desc "Programmatic enforcement for Claude Code agentic workflows"
   homepage "https://github.com/Bucket-Chemist/goYoke"
-  version "0.5.5"
+  version "0.5.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Bucket-Chemist/goYoke/releases/download/v0.5.5/goYoke_0.5.5_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "d29484a37dd0b5a7ed854cd4ed940566f674efb14192d95d5a93ef50c5a73eb2"
+      url "https://github.com/Bucket-Chemist/goYoke/releases/download/v0.5.6/goYoke_0.5.6_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "cedee8445cb1f5954dd2d24c66af1bdb51da32654e69877acb5c5aad1664a123"
 
       define_method(:install) do
         bin.install "goyoke"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Bucket-Chemist/goYoke/releases/download/v0.5.5/goYoke_0.5.5_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "1b3e875b446e91db33c993591ca6e60a37185c5b4b7789c9733c1b4ce04669ac"
+      url "https://github.com/Bucket-Chemist/goYoke/releases/download/v0.5.6/goYoke_0.5.6_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "3b90fa5114f25b87b4b413c32f5ef4b3722e3f625824b54e58bac3b40ad66145"
 
       define_method(:install) do
         bin.install "goyoke"
@@ -29,8 +29,8 @@ class Goyoke < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Bucket-Chemist/goYoke/releases/download/v0.5.5/goYoke_0.5.5_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e47952668de8a653b916e2c4d1ae0d5a91534ea0a5115a2c4c0be787d6979093"
+      url "https://github.com/Bucket-Chemist/goYoke/releases/download/v0.5.6/goYoke_0.5.6_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "8279e83220507da386d219c8d9b95db2b078ffd37e42a9d55dd1f5188445acbd"
       define_method(:install) do
         bin.install "goyoke"
       end
